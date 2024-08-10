@@ -1,0 +1,30 @@
+How to Install vscode and use
+=============================
+1. Download vscode from the below URL and Install
+   https://code.visualstudio.com/download
+
+2. Open vscode and choose the folder to open
+
+3. create an HTML file and add some content
+
+4. To open the HTML File in browser, install vscode extension
+   a. Open in browser   (alt + b , alt+shift+b)
+       (OR)
+   b. Live Server
+
+  
+
+
+Emmet Abbreviation
+===================
+  ! 
+  button*2{Add To Cart}
+
+
+
+FrontEnd Development
+====================
+HTML - Content  (paragraph,image,list,table,form)
+CSS  - Styling  (color, width, height)
+Bootstrap - pre-defined css classes , Responsiveness
+Javascript - Behaviour
