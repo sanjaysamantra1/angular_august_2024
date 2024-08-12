@@ -1,0 +1,71 @@
+FrontEnd Development
+====================
+HTML - Content  (paragraph,image,list,table,form)
+CSS  - Styling  (color, width, height)
+Bootstrap - pre-defined css classes , Responsiveness
+Javascript - Behaviour
+
+
+Javascript
+==========
+-Javascript is dynamically typed , synchronous & Single-threaded Programming language.
+-Javascript Engine executes code from top to bottom line by line.
+-Javascript engine has only 1 'callstack', hence it can do only 1 thing at a time.
+
+var a = 5;
+a = 'sachin';
+a = true;
+a = [];
+
+-A Javascript engine is a program or an interpreter which resides inside every browser that helps
+to execute javascript code.
+
+V8               - Google , chrome
+Spider Monkey    - mozilla , firefox
+Javascript core  - safari
+Chakra           - IE
+
+
+Types Of Javascript
+===================
+1. Internal
+    <script>Javascript Code</script>
+    head or body
+    page level javascript
+
+2. External
+    A Separate Javascript file is created
+    include that js file in HTML using <script>
+    Application level
+
+
+What is the best place to include javascript file
+==================================================
+head section
+body section
+
+
+No defer or async, in the head
+No defer or async, in the body
+With async, in the head
+With defer, in the head
+
+
+Eliminate Render-Blocking JavaScript
+====================================
+-With HTML5, we got two new boolean attributes for the <script> tag : async and defer.
+ ex:- <script src='demo.js' async/defer></script>
+-async/defer attribute should only be used on external scripts, not with internal scripts.
+-These attributes only make sense while using the script in the head portion of the page.
+-async attribute ensures that the JavaScript file is loaded asynchronously in the background and does not block rendering.
+-defer attribute tells the browser to run the script after the document has been parsed
+-With async, the file gets downloaded asynchronously and then executed as soon as it’s downloaded.
+-With defer, the file gets downloaded asynchronously, but executed only when the document parsing is completed.
+-With defer, scripts will execute in the same order as they are called. 
+ defer is useful when a script depends on another script.
+ https://flaviocopes.com/javascript-async-defer/
+
+
+
+
+
