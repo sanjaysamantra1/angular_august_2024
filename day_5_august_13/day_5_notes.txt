@@ -1,0 +1,43 @@
+Javascript - is a programming language, follows ECMASCRIPT standards
+ECMA - European Computer manufecturer Association
+ECMASCRIPT - is a standard, followed by javascript
+
+<2015   ES-5
+2015    ES-6 (class,extends,let,const,template,spread,rest,module)
+2016    ES-7
+2017    ES-8
+2018    ES-9
+2019    ES-10
+2020    ES-11
+2021    ES-12
+2022    ES-13
+2023    ES-14
+2024    ES-15
+
+
+Typescript is the superset of Javascript.
+
+        Javascript                      Typescript
+=================================================================
+1.Strongly typed - No                 1.Strongly typed - Yes
+2.directly run on browser - yes       2.directly run on browser - No
+3.Errors at run time                  3.Errors during compilation time
+4.Optional Parameter - No             4.Optional Parameter - Yes
+5.interface - No                      5.interface - Yes
+6.generics - No                       6. generics - Yes
+
+
+How to run a Typescript file
+============================
+1. npx tsc abc.ts   -->  abc.js
+2. node abc.js
+
+
+
+DataTypes
+=========
+1. Primitive (number,string,boolean,undefined,symbol,bigint)
+2. Non-Primitive (Object)
+
+-Primitives are immutable , Non-Primitives are mutable
+-Primitives are compared by value , non-primititves are compared by reference
