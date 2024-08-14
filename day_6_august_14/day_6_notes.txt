@@ -1,0 +1,55 @@
+DataTypes
+=========
+1. Primitive (number,string,boolean,undefined,symbol,bigint)
+2. Non-Primitive (Object)
+
+-Primitives are immutable , Non-Primitives are mutable
+-Primitives are compared by value , non-primititves are compared by reference
+
+
+undefined vs null
+==================
+-when a variable is declared but no value is assigned to that variable, by default undefined value gets assigned by javascript.
+-datatype for undefined value is 'undefined'
+
+-null is a value assigned by developers intensionally
+-datatype for null value is 'object'
+
+Note: even though datatype for 'null' value is object, null is a primitive value
+
+
+
+Variables
+=========
+-in javascript, variables are declared by using either of the below 3 keywords
+1. var
+2. let
+3. const
+
+
+    var						let						 const
+======================================================================
+1.since begining		 1.ECMASCRIPT-6(2015)		1.ECMASCRIPT-6(2015)
+2.value can be changed   2.value can be changed     2.cann't be changed
+3.initialization is		 3.initialization is		3.mandatory
+	not mandatory           not mandatory	
+4.can be redeclared		 4.cann't be redeclared		4.cann't be redeclared
+5.TDZ - No			 	 5.TDZ - Yes				5.TDZ - Yes
+6.function/global		 6.block/function/global	6.block/function/global
+
+
+Temporal Dead Zone
+==================
+-The period between entering scope and being declared where they cannot be accessed. 
+ This period is the temporal dead zone (TDZ).
+-The state where variables are un-reachable. They are in memory, but they aren't usable.
+-The let and const variables exist in the TDZ from the start of their enclosing scope until they are initialized.
+-if a let/const variable is accessed before its declaration, it would throw a ReferenceError. Because of the TDZ.
+
+
+Variables Scope
+===============
+1. global   (script , window)
+2. function
+3. block
+4. closure

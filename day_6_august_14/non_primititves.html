@@ -1,0 +1,21 @@
+<script>
+    var obj1 = { a: 10, b: 20 };
+    console.log(obj1, typeof obj1); // object
+
+    var cars = ['tata', 'honda'];
+    console.log(cars, typeof cars); // object
+
+    // How to differentiate between object and array
+    var a = {};
+    var b = [];
+    console.log(typeof a, typeof b); // object object
+
+    console.log(a instanceof Object); // true
+    console.log(b instanceof Object); // true
+
+    console.log(a instanceof Array); // false
+    console.log(b instanceof Array); // true
+
+    console.log(Array.isArray(a)); // false
+    console.log(Array.isArray(b)); // true
+</script>
