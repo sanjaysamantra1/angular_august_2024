@@ -1,0 +1,13 @@
+<script>
+    for (var i = 1; i <= 3; i++) {
+        console.log('inside for I value ', i);
+    }
+    console.log('outside for I value ', i); // i is accesible even outside for loop
+
+
+    for (let j = 1; j <= 3; j++) {
+        console.log('inside for j value ', j);
+    }
+    console.log('outside for j value ', j);
+    // j is not visible outside for loop, j has block scope
+</script>

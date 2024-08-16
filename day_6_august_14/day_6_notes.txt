@@ -46,10 +46,3 @@ Temporal Dead Zone
 -The let and const variables exist in the TDZ from the start of their enclosing scope until they are initialized.
 -if a let/const variable is accessed before its declaration, it would throw a ReferenceError. Because of the TDZ.
 
-
-Variables Scope
-===============
-1. global   (script , window)
-2. function
-3. block
-4. closure

@@ -1,0 +1,24 @@
+<script>
+    function varTest() {
+        var a = 10;  // function
+        if (true) {
+            var b = 20; // it should have been block , its scope is function
+            // even though it is declared inside a block , b variable scope is function
+            console.log('Block ', a, b);
+        }
+        console.log('Function ', a, b);
+    }
+    varTest();
+    // Note : using var , we cann't declare block scoped variable
+
+    function letTest() {
+        let a = 1000; // function
+        if (true) {
+            let b = 2000; // block
+            console.log('Block ', a, b);
+        }
+        console.log('Function ', a);
+        console.log('Function ', b);
+    }
+    letTest();
+</script>

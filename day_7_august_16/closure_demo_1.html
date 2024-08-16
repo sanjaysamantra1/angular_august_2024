@@ -1,0 +1,13 @@
+<script>
+    var a = 10;   // a - global
+    let b = 20;   // b - script
+    const c = 30; // c - script
+
+    function f1() {
+        var d = 40;  // d - local
+        console.log(a, b, c, d)
+    }
+    f1();
+
+    // Note : Closure scope will be seen only if an inner function tries to use out function's data
+</script>

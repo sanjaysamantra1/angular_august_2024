@@ -1,0 +1,21 @@
+<script>
+    function varTest() {
+        var a = 10;
+        if (true) {
+            var a = 20;
+            console.log('Block ', a); // 20
+        }
+        console.log('Function ', a);  // 20
+    }
+    varTest();
+
+    function letTest() {
+        let a = 100; // function
+        if (true) {
+            let a = 200; // block
+            console.log('Block ', a);  // 2000
+        }
+        console.log('Function ', a);  // 1000
+    }
+    letTest();
+</script>

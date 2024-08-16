@@ -1,0 +1,15 @@
+<script>
+    function f1() {
+        var a = 10;
+        function f2() {
+            var b = 20;
+            console.log('inside f2 ', a, b)
+        }
+        f2();
+        console.dir(f2);
+    }
+    f1()
+    console.dir(f1);
+    // Note : Closure scope will be seen only if an inner function tries to use outer function's data
+    // there won't closure scope for the outer function
+</script>

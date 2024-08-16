@@ -1,0 +1,25 @@
+<script>
+    var a = 10;
+    let b = 20;
+    const c = 30; // global
+
+    function f1() {
+        var d = 40;  // function 
+        name = 'sachin'; // global
+        console.log('f1 starts...')
+        console.log(a, b, c, name)
+        // console.log(e); // No
+        console.log('f1 end...')
+    }
+    function f2() {
+        var e = 50;  // function 
+        console.log('f2 starts...')
+        console.log(a, b, c, name)
+        // console.log(d); // No
+        console.log('f2 end...')
+    }
+    f1();
+    f2();
+
+    // Note : when variables are declared without var/let/const , the scope becomes global
+</script>
