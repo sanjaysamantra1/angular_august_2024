@@ -1,0 +1,8 @@
+most used methods in Javascript
+================================
+window.alert()           window(Object),alert(function)
+document.write()        document(object),write(function)
+console.log()           console(Object),log(function)
+
+
+It seems my internet is not working, lets stop the session here, will have our next session on Monday
