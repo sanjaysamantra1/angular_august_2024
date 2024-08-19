@@ -1,0 +1,15 @@
+<script>
+    console.log('Global Code starts here.....');
+
+    function f1() {
+        console.log('f1 ', this); // this = window (how the function is invoked)
+    }
+
+    let f2 = () => {
+        console.log('f2 ', this); // this = window (f2 is written in window)
+    }
+
+    f1();  
+    f2();
+    console.log('Global Code ends here.....');
+</script>

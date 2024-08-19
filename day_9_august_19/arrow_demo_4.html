@@ -1,0 +1,21 @@
+<script>
+    class Employee { // this = Employee
+        firstName = 'sachin';
+        lastName = ' tendulkar';
+
+        fullName1() {
+            console.log(this.firstName + this.lastName , this)
+        }
+        fullName2 = () => {
+            console.log(this.firstName + this.lastName , this)
+        }
+    }
+    let emp1 = new Employee();
+    emp1.fullName1(); // this = Employee object
+    emp1.fullName2(); // this = Employee object (fullName2() is written inside Employee)
+
+    setTimeout( emp1.fullName1 , 2000 );
+    setTimeout( emp1.fullName2 , 2000 );
+
+    // fullName2() is written inside Employee class, always this=Employee , no matter how /wehere fullName2 is called
+</script>

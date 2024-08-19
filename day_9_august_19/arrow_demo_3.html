@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <h1>Please Click 1 of the button to change the background color of that button</h1>
+    <hr />
+    <button id="btn-1">Button-1</button>
+    <button id="btn-2">Button-2</button>
+    <button id="btn-3">Button-3</button>
+
+    <script>
+        function changeColor() {
+            console.log(this);
+            this.style.backgroundColor = 'red';
+            // this = how the function is called
+            // this = window / btn1 / btn2 / btn3
+        }
+        // changeColor();
+
+        document.getElementById('btn-1').addEventListener('click', changeColor)
+        document.getElementById('btn-2').addEventListener('click', changeColor)
+        document.getElementById('btn-3').addEventListener('click', changeColor)
+    </script>
+</body>
+
+</html>

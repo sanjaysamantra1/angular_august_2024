@@ -1,0 +1,35 @@
+Functions 
+=========
+-function is a block of code/statements designed to perform a particular task.
+
+a. function declaration (named function)
+b. function expression(anonymous)
+c. self invoked ( IIFE- Immediately Invoked Function Expression)
+d. arrow function (ES - 6)(2015)
+
+
+Function declaration vs Function Expression
+============================================
+1. function declaratons are named functions, function expressions are anonymous
+2. function declarations are hoisted, function expressions are not hoisted
+
+Self Invoked
+============
+1. anonymous
+2. when we want to invoke a function only 1 time
+
+
+
+Arrow function
+===============
+Regular Function :  this = how/where the function is invoked
+                    'this' is not static
+
+arrow function : this = where the function is written
+                 'this' is static
+
+
+Arrow Function Limitations
+===========================
+1. don't use arrow function as object methods
+2. don't use arrow function, when value of 'this' should be dynamic

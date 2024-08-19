@@ -1,0 +1,28 @@
+<script>
+    class Employee { // this = Employee
+        firstName = 'sachin';
+        lastName = ' tendulkar';
+
+        fullName1() {
+            console.log(this.firstName + this.lastName, this)
+        }
+        fullName2 = () => {
+            console.log(this.firstName + this.lastName, this)
+        }
+    }
+    let emp1 = new Employee();
+    emp1.fullName1();
+    emp1.fullName2();
+
+    let a = emp1.fullName1;
+    // a();
+
+    let b = emp1.fullName2;
+    b();
+
+    let c = b;
+    c();
+
+    let d = c;
+    d();
+</script>
