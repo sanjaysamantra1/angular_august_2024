@@ -1,0 +1,32 @@
+<html>
+
+<body>
+    <h2>Counter value is::<span>0</span></h2>
+    <button onclick="increment()">increment</button>
+    <button onclick="decrement()">decrement</button>
+    <button onclick="reset()">reset</button>
+
+    <script>
+        let createCounter = function () {
+            let counter = 0;
+
+            function increment() {
+                counter++;
+                document.querySelector('span').innerText = counter;
+            }
+            function decrement() {
+                counter--;
+                document.querySelector('span').innerText = counter;
+            }
+            function reset() {
+                counter = 0;
+                document.querySelector('span').innerText = counter;
+            }
+            return { increment, decrement, reset };
+        }
+        let { increment, decrement, reset } = createCounter();
+        console.dir(increment)
+    </script>
+</body>
+
+</html>

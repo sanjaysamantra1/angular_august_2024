@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <h2>Counter value is::<span>0</span></h2>
+    <button onclick="increment()">increment</button>
+    <button onclick="sayHi()">sayHi</button>
+    <script>
+        let counter = 0;
+        function increment() {
+            counter++;
+            document.querySelector('span').innerText = counter;
+        }
+        function sayHi() {
+            console.log('Hiiiiiiiiiiiiiii');
+            counter++;
+            document.querySelector('span').innerText = counter;
+        }
+    </script>
+</body>
+
+</html>
