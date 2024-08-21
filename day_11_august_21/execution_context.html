@@ -1,0 +1,22 @@
+<script>
+    console.log('Global code starts here')
+    let a = 10;
+    let b = 20;
+
+    function add(num1, num2) {
+        let res1 = num1 + num2;
+        return res1;
+    }
+    function mul(num1, num2) {
+        let res2 = num1 + num2;
+        return res2;
+    }
+    var addResult1 = add(a, b);
+    var addResult2 = add(2, 3);
+
+    var mulResult = mul(a, b);
+    console.log(addResult1, addResult2, mulResult)
+    console.log('Global code ends here');
+
+    // Execution Context - 4 , 1-global , 2-add , 1-mul
+</script>

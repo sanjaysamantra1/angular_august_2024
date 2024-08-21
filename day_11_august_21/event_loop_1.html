@@ -1,0 +1,21 @@
+<script>
+    function A() {
+        console.log('aaaa')
+    }
+    function B() {
+        console.log('bbbb')
+    }
+    function C() {
+        console.log('cccc')
+    }
+    function D() {
+        console.log('dddd')
+    }
+
+    A();
+    Promise.resolve().then(B);
+    setTimeout(C, 0);
+    D();
+
+    // a   d   b  c
+</script>
