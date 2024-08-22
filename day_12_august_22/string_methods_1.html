@@ -1,0 +1,30 @@
+<script>
+    let str1 = 'hello';
+    console.log(str1.length);
+    console.log(str1.toUpperCase());
+    console.log(str1.toLowerCase());
+
+    console.log(str1.charAt(1)); // e
+    console.log(str1.at(1)); // e
+
+    console.log(str1.charAt(-1)); // charAt() doesn't work with negative index
+    console.log(str1.at(-1)); // e
+
+    console.log(str1.charCodeAt(1)); // Ascii - 101  (a-97,b-98,c-99,d-100,e-101)
+
+    let fName = 'sachin'
+    let mName = ' ramesh'
+    let lName = ' tendulkar'
+    let fullName1 = fName.concat(mName, lName);
+    let fullName2 = fName.concat(mName).concat(lName);
+    console.log(fullName1)
+    console.log(fullName2);
+
+    let str = 'entertainment';
+    console.log(str.indexOf('e')); // 0
+    console.log(str.indexOf('e', 1)); // 3
+    console.log(str.lastIndexOf('e')); // 10
+
+    console.log(str.includes('men')); // true
+    console.log(str.includes('man')); // false
+</script>

@@ -1,0 +1,21 @@
+<script>
+    let str1 = 'hello'; // string Literal
+    let str2 = 'hello'; // string Literal
+
+    let str3 = new String('hello'); // string Object
+    let str4 = new String('hello'); // string Object
+
+    console.log(typeof str1, typeof str3); // string object
+
+    console.log(str1 == str2); // true
+    console.log(str1 == str3); // true (typecasting)
+    console.log(str3 == str4); // false (address)
+
+    let expr1 = '2+3+4';
+    let expr2 = new String('2+3+4');
+    console.log(eval(expr1)); // 9
+    console.log(eval(expr2)); // String {'2+3+4'}
+
+    let expr3 = expr2.valueOf(); // valueOf() converts string object to literal
+    console.log(eval(expr3)); // 9
+</script>

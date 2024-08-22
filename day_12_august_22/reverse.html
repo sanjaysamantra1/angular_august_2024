@@ -1,0 +1,14 @@
+<script>
+    let str = 'hello';
+
+    // solution-1
+    let res1 = '';
+    for (char of str) {
+        res1 = char + res1;
+    }
+    console.log(res1);
+
+    // solution-2
+    let res2 = str.split('').reverse().join('');
+    console.log(res2)
+</script>
