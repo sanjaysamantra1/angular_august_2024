@@ -1,0 +1,25 @@
+<script>
+    console.log(10 - 15);
+
+    function myCompare(str1, str2) {
+        if (str1 < str2) {
+            return -1
+        } else if (str2 < str1) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+    let res1 = myCompare('deepak', 'bijay');
+    console.log(res1)
+    let res2 = myCompare('deepak', 'manoj');
+    console.log(res2)
+    let res3 = myCompare('deepak', 'deepak');
+    console.log(res3);
+
+
+    console.log('deepak'.localeCompare('bijay'))
+    console.log('deepak'.localeCompare('manoj'))
+    console.log('deepak'.localeCompare('deepak'))
+    console.log('deepak'.localeCompare('Deepak'))
+</script>

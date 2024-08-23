@@ -61,17 +61,3 @@ concat();
 indexOf();
 lastIndexOf();
 includes();
-match();
-matchAll()
-replace();
-replaceAll();
-slice(start, end)
-substring(start, end)
-substr(start, length)
-split()
-search(regex)
-trim()
-eval(); (eval() is from Window Object)
-localeCompare()
-
-N.p:- substring() cannot accept negative indexes. slice() does.
