@@ -1,0 +1,25 @@
+<script>
+    let arr = [10, 20, 30];
+
+    arr.push(40);
+    console.log(arr);
+    arr.pop();
+    console.log(arr);
+
+    arr.unshift(40);
+    console.log(arr);
+    arr.shift();
+    console.log(arr)
+
+    // splice(position, deleteCount, ...items)
+    let arr1 = [10, 20, 30, 40];
+    // only insert
+    arr1.splice(2, 0, 25);
+    console.log(arr1)
+    // only delete
+    arr1.splice(2, 1);
+    console.log(arr1)
+    // both insert and delete
+    arr1.splice(1,2,15,25,35)
+    console.log(arr1)
+</script>
