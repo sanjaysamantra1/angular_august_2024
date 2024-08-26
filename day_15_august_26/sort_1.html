@@ -1,0 +1,21 @@
+<script>
+    let cars = ['tata', 'maruti', 'honda', 'toyota'];
+    cars.sort();
+    console.log(cars)
+    console.log(cars.sort().reverse())
+
+    let arr1 = [10, 40, 50, 20, 30];
+    arr1.sort();
+    console.log(arr1);
+
+    let arr2 = [9, 91, 104, 101, 10, 1, 8, 102, 105, 2];
+    arr2.sort();      // string sort
+    console.log(arr2)
+
+    // sort() with compare function, numeric sort
+    arr2.sort((a, b) => a - b)
+    console.log(arr2)
+
+    arr2.sort((a, b) => b - a); // descending
+    console.log(arr2)
+</script>

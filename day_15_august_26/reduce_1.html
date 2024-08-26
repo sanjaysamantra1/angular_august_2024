@@ -1,0 +1,16 @@
+<script>
+    let arr = [10, 20, 30, 40, 50];
+    let sum = arr.reduce((res, ele) => {
+        console.log(res, ele);
+        return res + ele;
+    });
+    console.log(sum)
+
+    let str = 'SACHIN';
+    let revStr = str.split('').reduce((rev, char) => {
+        // console.log(rev,char)
+        rev = char + rev;
+        return rev;
+    });
+    console.log(revStr)
+</script>

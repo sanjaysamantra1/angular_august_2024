@@ -1,0 +1,30 @@
+<script>
+    // Array of Objects(Employees)
+    let employees = [
+        { eId: 101, name: 'sanjay', sal: 5000, gender: 'male' },
+        { eId: 104, name: 'geeta', sal: 8000, gender: 'female' },
+        { eId: 103, name: 'sameer', sal: 7000, gender: 'male' },
+        { eId: 102, name: 'sita', sal: 9000, gender: 'female' },
+        { eId: 105, name: 'deepak', sal: 8000, gender: 'male' }
+    ];
+
+    // Q1. find the employee whose salary is 8000
+    let emp_sal_7000 = employees.find((emp) => emp.sal == 8000);
+    console.log(emp_sal_7000);
+
+    // Q2. find the index of first female employee
+    let first_female_emp_ind = employees.findIndex((emp) => emp.gender == 'female')
+    console.log(first_female_emp_ind)
+
+    // Q3. find the last female employee
+    let last_female_emp = employees.findLast((emp) => emp.gender == 'female')
+    console.log(last_female_emp)
+
+    // Q4. find the last female employee
+    let last_female_emp_ind = employees.findLastIndex((emp) => emp.gender == 'female')
+    console.log(last_female_emp_ind)
+
+    // Q5. find all the employees with sal 8000
+    let emps_sal_8000 = employees.filter((emp) => emp.sal == 8000);
+    console.log(emps_sal_8000)
+</script>
