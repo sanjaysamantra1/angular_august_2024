@@ -1,0 +1,11 @@
+Array Methods
+==============
+every()
+some()
+
+keys()
+values()
+entries()
+
+fill()
+

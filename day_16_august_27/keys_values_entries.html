@@ -1,0 +1,17 @@
+<script>
+    let cars = ['tata', 'honda', 'maruti'];
+
+    let allKeys = cars.keys(); // [0,1,2]
+    let allValues = cars.values(); // ['tata', 'honda', 'maruti']
+    let allEntries = cars.entries(); // [ [0, 'tata'],[1, 'honda'],[2, 'maruti']]
+
+    for (key of allKeys) {
+        console.log(key)
+    }
+    for (value of allValues) {
+        console.log(value)
+    }
+    for (entry of allEntries) {
+        console.log(entry)
+    }
+</script>
