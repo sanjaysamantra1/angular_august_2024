@@ -1,0 +1,40 @@
+<script>
+    class Student {
+        roll;
+        name;
+        gender;
+        course;
+        constructor(roll, name, gender, course) {
+            this.roll = roll;
+            this.name = name;
+            this.gender = gender;
+            this.course = course;
+            // this.clgName = 'nareshIT';
+            // this.clgAdd = 'hyderabad';
+        }
+    }
+    Student.prototype.clgName = 'nareshIT';
+    Student.prototype.clgAdd = 'hyderabad';
+
+    let std1 = new Student(101, 'srinivas', 'male', 'Angular')
+    let std2 = new Student(102, 'divya', 'female', 'React'); // 4 * 1000 = 4000
+    console.log(std1)
+    console.log(std2)
+    console.log(std1.name, std1.clgName, std1.clgAdd);
+
+    std1.clgName = 'NareshInfoTech';
+    // prototype property value is not being changed, std1 gets a new property
+    console.log(std1.name, std1.clgName, std1.clgAdd);
+    console.log(std2.name, std2.clgName, std2.clgAdd);
+
+    // How to check if a property exists in an object ( in / hasOwnProperty)
+    console.log(std1.hasOwnProperty('roll')); // true
+    console.log(std1.hasOwnProperty('clgAdd'));  // false
+    console.log(std1.hasOwnProperty('dob'));  // false
+
+    console.log('roll' in std2); // true
+    console.log('clgAdd' in std2); // true
+    console.log('dob' in std2); // false ('dob' is neither present in object nor in prototype)
+    // Note:hasOwnProperty() checks if a property exists in an object or not
+    // Note: in checks if a property exists in an object or prototype
+</script>

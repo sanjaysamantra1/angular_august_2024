@@ -1,0 +1,21 @@
+OOP
+----
+class - structure/blueprint/template for creating Object 
+		class has only logical existance
+		class doesn't have physical existance
+		
+object - Real Entity
+		 every instance of a class
+		 Object has physical existance
+
+-a class in javascript is created using constructor function(ES-5).
+-a class in javascript is created using class keyword.(ES-6).
+-class contains variables(states/properties) and methods(behaviours) inside it.
+
+
+
+Prototype
+---------
+-A prototype is an object used to implement structure, state, and behaviour inheritance.
+-Prototype is the mechanism by which JavaScript objects inherit features from one another
+-Prototype is an object, where we can attach methods and properties,which enables all the other objects to inherit these methods and properties.
