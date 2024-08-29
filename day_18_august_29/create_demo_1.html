@@ -1,0 +1,11 @@
+<script>
+    let obj1 = { a: 10, b: 20 };
+    let obj2 = Object.create(obj1);
+    // obj1's properties are stored in the prototype of obj2
+    console.log(obj1)
+    console.log(obj2)
+    obj1.a = 15;
+    obj2.b = 25;
+    console.log(obj1); //  { a: 15, b: 20 }
+    console.log(obj2.a, obj2.b); // 15 25
+</script>

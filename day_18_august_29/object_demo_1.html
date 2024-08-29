@@ -1,0 +1,18 @@
+<script>
+    let user = { name: 'sachin', age: 35, add: 'mumbai', 'last name': 'tendulkar', x: 10 };
+
+    console.log(user.name);
+    console.log(user['age'])
+
+    // console.log(user.last name);
+    console.log(user['last name']);
+    // when object key contains space , . cann't be used
+
+    let x = 'age';
+    console.log(user.x);  // in user object , it looks for 'x' property
+    console.log(user[x]); // in user object , it looks for 'age' property
+
+    for (let key in user) {
+        console.log(key + " === " + user[key])
+    }
+</script>

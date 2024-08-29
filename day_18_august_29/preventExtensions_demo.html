@@ -1,0 +1,17 @@
+<script>
+    let obj1 = { a: 10, b: 20 };
+    obj1.c = 30;   // add a new property - Yes
+    delete obj1.b; // delete a property - yes
+    obj1.a = 15;  // update value of a property - Yes
+    console.log(obj1);
+
+    let obj2 = { a: 100, b: 200 };
+    Object.preventExtensions(obj2);
+    obj2.c = 300;   // add a new property - No
+    delete obj2.b; // delete a property - Yes
+    obj2.a = 150;  // update value of a property - Yes
+    console.log(obj2); // { a:150 }
+
+    console.log('Obj1 is isExtensible? ', Object.isExtensible(obj1))
+    console.log('Obj2 is isExtensible? ', Object.isExtensible(obj2))
+</script>

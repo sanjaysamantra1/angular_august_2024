@@ -1,0 +1,15 @@
+<script>
+    let arr1 = [10, 20, [31, 32]];
+
+    let arr2 = arr1;        // reference Copy
+    let arr3 = [...arr1];   // Shallow Copy
+    let arr4 = structuredClone(arr1); // Deep Copy
+
+    arr1.push(40, 50);
+    arr1[2].push(33, 34);
+
+    console.log(arr1); // [10,20,[31,32, 33, 34], 40,50]
+    console.log(arr2); // [10,20,[31,32, 33, 34], 40,50]
+    console.log(arr3); // [10,20,[31,32, 33, 34]]
+    console.log(arr4); // [10, 20, [31, 32]]
+</script>

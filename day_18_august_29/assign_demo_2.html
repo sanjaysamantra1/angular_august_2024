@@ -1,0 +1,17 @@
+<script>
+    let obj1 = { a: 10, b: 20 };
+    let obj2 = obj1; // address copy / Reference Copy
+    console.log(obj1, obj2);
+
+    obj1.a = 15;
+    obj2.b = 25;
+    console.log(obj1, obj2);
+
+    let obj3 = { x: 100, y: 200 };
+    let obj4 = Object.assign({}, obj3); // Value Copy
+    // creates a new Object, copies the properties from obj3
+    obj3.x = 150;
+    obj4.y = 250;
+    console.log(obj3)
+    console.log(obj4)
+</script>

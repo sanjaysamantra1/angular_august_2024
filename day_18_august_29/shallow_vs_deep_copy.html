@@ -1,0 +1,18 @@
+<script>
+    let user1 = { name: 'sanjay', age: 30, add: { city: 'bangalore' } };
+
+    let user2 = user1; // Reference Copy
+    let user3 = { ...user1 } // value - Shallow Copy
+    let user4 = structuredClone(user1) // value - Deep copy
+
+    user1.name = 'deepak';
+    user1.add.city = 'mumbai';
+
+    console.log(user2);
+
+    console.log(user3); // { name: 'sanjay', age: 30, add: { city: 'mumbai' } }
+    // shallow copy copies top level properties by value & nested properties by address
+
+    console.log(user4);
+    // both top level and nested properties are copied by value
+</script>
