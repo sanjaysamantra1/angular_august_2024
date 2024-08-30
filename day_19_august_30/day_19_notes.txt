@@ -1,0 +1,46 @@
+ES-6 and beyond
+===============
+1. const
+2. let
+3. Arrow Function
+4. template literal
+5. multiline string
+6. for-in , for-of
+7. Map , Set
+8. Module
+9. Promise
+10. exponent **
+11. async await
+12. rest parameter
+13. Spread Operator
+14. object de-structuring, array destructuring
+15. nullish coalescing operator
+16. globalThis
+17. safe navigation operator ?.
+18. Object.groupBy
+
+
+Set
+===
+- Set is a data-structure, which allows only unique values
+-const planetsOrderFromSun = new Set();
+ planetsOrderFromSun.add('Mercury');
+ planetsOrderFromSun.add('Venus').add('Earth').add('Mars'); // Chainable Method
+ console.log(planetsOrderFromSun.size);
+ console.log(planetsOrderFromSun.has('Earth')); // True
+ planetsOrderFromSun.delete('Earth'); // deletes 1 item
+ planetsOrderFromSun.clear(); // deletes all the items
+
+
+ Map
+ ===
+-Map is a data-structure, which store data in key-value pair
+
+
+ object vs map
+-------------
+1. object keys must be strings/symbol, where as map keys can be of any type.
+2. You can get the size of a Map easily.  ex: map.size
+   for object size has to be calculated manually. ex: Object.keys(obj).length
+3.The iteration of maps is in insertion order of the elements
+4.Objects are not inherently iterable (Object.keys() is slow), Maps are iterable.

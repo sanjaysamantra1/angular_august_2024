@@ -1,0 +1,25 @@
+<script>
+    let mySet = new Set();
+    mySet.add(10)
+    mySet.add(20)
+    mySet.add(40)
+    mySet.add(10)
+    mySet.add(20)
+    mySet.add(40)
+    mySet.add(10)
+    mySet.add(20)
+    mySet.add(40)
+    console.log(mySet)
+
+    console.log(Array.isArray(mySet)); // false
+    console.log(mySet.size); // 3
+    console.log(mySet.has(10)); // true
+    console.log(mySet.has(30)); // true
+    console.log(mySet.delete(40));
+    console.log(mySet)
+
+    mySet.forEach(ele=>console.log(ele));
+    
+    mySet.clear();
+    console.log(mySet)
+</script>

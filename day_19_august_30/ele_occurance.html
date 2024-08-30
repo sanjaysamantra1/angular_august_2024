@@ -1,0 +1,26 @@
+<script>
+    let myArr = [10, 20, 50, 30, 40, 10, 10, 10, 30, 30, 40, 20, 20, 20];
+
+    // solution using object
+    let result = {};
+    for (ele of myArr) {
+        if (result[ele]) {
+            result[ele] = result[ele] + 1;
+        } else {
+            result[ele] = 1;
+        }
+    }
+    console.log(result);
+
+    // solution using map
+    let myMap = new Map();
+    for (ele of myArr) {
+        if (myMap.has(ele)) {
+            myMap.set(ele, myMap.get(ele) + 1)
+        } else {
+            myMap.set(ele, 1);
+        }
+    }
+    console.log(myMap);
+
+</script>
