@@ -1,0 +1,21 @@
+ES-6 and beyond
+===============
+Spread Operator
+Enhanced Object Literal
+object de-structuring, array destructuring
+nullish coalescing operator
+safe navigation operator ?.
+Object.groupBy
+globalThis
+Module
+Promise
+async await
+
+
+Module System
+=============
+CommonJS       (module.exports , require)
+ECMASCRIPT
+AMD
+UMD
+

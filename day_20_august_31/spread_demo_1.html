@@ -1,0 +1,21 @@
+<script>
+    function sum(...arr) { // Rest Parameter
+        console.log(Array.isArray(arr))
+        var sum = 0;
+        for (ele of arr) {
+            sum = sum + ele;
+        }
+        console.log(sum)
+    }
+    sum(2, 3, 4);
+    // when ... are used as function parameter, that is REST parameter
+
+
+    let arr1 = [10, 20, 30];
+    let arr2 = arr1; // reference copy
+    let arr3 = [...arr1]; // copy by value, spread operator
+    arr3.push(40);
+    console.log(arr1)
+    console.log(arr2)
+    console.log(arr3)
+</script>

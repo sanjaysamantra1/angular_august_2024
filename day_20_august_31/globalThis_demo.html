@@ -1,0 +1,13 @@
+<script>
+    console.log(this);
+    console.log(globalThis);
+
+    class Student {
+        display() {
+            console.log(this) // Student 
+            console.log(globalThis) // Window
+        }
+    }
+    let std1 = new Student();
+    std1.display();
+</script>
