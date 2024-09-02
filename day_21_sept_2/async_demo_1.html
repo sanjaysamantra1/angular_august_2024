@@ -1,0 +1,15 @@
+<script>
+    function add(a, b) {
+        return a + b;
+    }
+    let addResult = add(3, 4); // returns a value-7
+    console.log(addResult);
+
+    async function mul(a, b) {
+        return a * b; // returns a promise
+    }
+    let promiseObj = mul(4, 5);
+    promiseObj.then((res) => console.log(res));
+
+    // async can be used alone, but await cann be used only inside an async function
+</script>

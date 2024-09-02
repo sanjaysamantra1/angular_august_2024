@@ -1,0 +1,32 @@
+<script>
+    // how to create our own promise 
+    function add(a, b) {
+        return a + b;
+    }
+    let addResult = add(3, 4);
+    console.log(addResult); // 7
+
+    function sub(a, b) {
+        let result;
+        setTimeout(() => {
+            result = a - b;
+        }, 2000);
+        return result; // the function returns the value much before the calculation happens
+    }
+    let subResult = sub(10, 5);
+    console.log(subResult); // undefined
+
+
+    function mul(a, b) {
+        let promiseObj = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve(a * b);
+            }, 2000);
+        })
+        return promiseObj;
+    }
+    mul(4, 5).then(
+        (res) => { console.log('multiplication response is ', res) },
+        (err) => { console.log(err) }
+    )
+</script>

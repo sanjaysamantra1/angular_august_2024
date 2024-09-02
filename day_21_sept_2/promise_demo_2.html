@@ -1,0 +1,15 @@
+<script>
+    let userPromise = fetch('https://jsonplaceholder.typicode.com/users')
+
+    // async await
+    async function fetchData() {
+        try {
+            let response = await userPromise;
+            let finalData = await response.json();
+            console.log(finalData)
+        } catch (err) {
+            console.log(err);
+        }
+    }
+    fetchData();
+</script>

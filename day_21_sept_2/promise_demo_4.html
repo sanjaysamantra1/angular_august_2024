@@ -1,0 +1,31 @@
+<script>
+    // write a function to add 2 numbers and return the result
+    function add(a, b) {
+        return a + b;
+    }
+    let addResult = add(10, 20);
+    console.log(addResult);
+
+    // write a function which takes 2 args, and 
+    // returns multiplication result after 2sec
+    // the function should return error if passed args are not numbers
+    function mul(a, b) {
+        return new Promise((resolve, reject) => {
+            if (isNaN(a) || isNaN(b)) {
+                reject('Please send 2 numbers')
+            } else {
+                setTimeout(() => {
+                    resolve(`Multiplication of ${a} & ${b} is ${a * b}`)
+                }, 2000)
+            }
+        })
+    }
+    mul(10, 20).then(
+        (res) => console.log(res), // suceeds
+        (err) => console.log(err)
+    )
+    mul(10, 'sachin').then(
+        (res) => console.log(res), 
+        (err) => console.log(err) // fails
+    )
+</script>

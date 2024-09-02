@@ -1,0 +1,8 @@
+<script>
+    Promise.resolve('Hello World').then(val => console.log(val));
+
+    Promise.reject('Something Went Wrong').then(
+        (res) => console.log("helllooooo"),
+        (err) => console.log("hiiiiiiiii")
+    );
+</script>
